@@ -1,0 +1,25 @@
+.link {
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #ddd6cb;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-right: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.link:hover,
+.link:active {
+  background: linear-gradient(90deg, #66f931, #05ecff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
+}
+
+.active {
+  background: linear-gradient(90deg, #d1f931, #05d1ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

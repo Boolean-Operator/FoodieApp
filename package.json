@@ -1,5 +1,6 @@
 {
   "name": "foodies",
+  "author": "Mark Graybill",
   "version": "0.1.0",
   "private": true,
   "scripts": {

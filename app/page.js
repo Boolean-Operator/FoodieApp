@@ -1,45 +1,65 @@
+'use client';
 import Link from 'next/link';
+import classes from './page.module.css';
+import ImageSlideshow from './components/images/image-slideshow';
+import { usePathname } from 'next/navigation';
 
 export default function Home() {
+  const path = usePathname();
   return (
-    <main>
-      <h1 style={{ color: 'white', textAlign: 'center' }}>
-        Time to get started!
-      </h1>
+    <>
+      <header className={classes.header}>
+        <div className={classes.slideshow}>
+          <ImageSlideshow />
+        </div>
+        <div>
+          <div className={classes.hero}>
+            <h1>NextLevel Food for NextLevel Foodies</h1>
+            <p>Taste & share food from all over the world.</p>
+          </div>
+          <div className={classes.cta}>
+            <Link
+              href="/community"
+              className={path.startsWith('/meals') ? classes.active : undefined}
+            >
+              Join the Community
+            </Link>
+            <Link
+              href="/meals"
+              className={path.startsWith('/meals') ? classes.active : undefined}
+            >
+              Explore Meals
+            </Link>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section className={classes.section}>
+          <h2>How it works</h2>
+          <p>
+            NextLevel Food is a platform for foodies to share their favorite
+            recipes with the world. It&apos;s a place to discover new dishes,
+            and to connect with other food lovers.
+          </p>
+          <p>
+            NextLevel Food is a place to discover new dishes, and to connect
+            with other food lovers.
+          </p>
+        </section>
 
-      <p style={{ textAlign: 'center' }}>
-        <Link
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-          href="/meals"
-        >
-          Meals
-        </Link>
-      </p>
-      <p style={{ textAlign: 'center' }}>
-        <Link
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-          href="/meals/share"
-        >
-          Share Meals Page
-        </Link>
-      </p>
-      <p style={{ textAlign: 'center' }}>
-        <Link
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-          href="/community"
-        >
-          Community Page
-        </Link>
-      </p>
-    </main>
+        <section className={classes.section}>
+          <h2>Why NextLevel Food?</h2>
+          <p>
+            NextLevel Food is a platform for foodies to share their favorite
+            recipes with the world. It&apos;s a place to discover new dishes,
+            and to connect with other food lovers.
+          </p>
+          <p>
+            NextLevel Food is a place to discover new dishes, and to connect
+            with other food lovers.
+          </p>
+        </section>
+      </main>
+    </>
   );
 }

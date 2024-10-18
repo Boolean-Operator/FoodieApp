@@ -1,0 +1,9 @@
+.header-background {
+  position: absolute;
+  width: 100%;
+  height: 125px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(0.25turn, #ebaa07, #ef4c15);
+}
