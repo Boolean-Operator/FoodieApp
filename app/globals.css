@@ -26,7 +26,7 @@ body {
   font-weight: 900;
   color: #262626;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #f9572a, #ffc905);
+  background: linear-gradient(90deg, #ffc905, #f9572a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: cover;
