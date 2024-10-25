@@ -21,7 +21,7 @@ const dummyMeals = [
       4. Serve:
          Complete the assembly with the top bun and serve hot.
     `,
-    creator: 'John Doe',
+    creator: 'Anthony Bourdain',
     creator_email: 'johndoe@example.com',
   },
   {
@@ -46,7 +46,7 @@ const dummyMeals = [
       5. Serve:
          Enjoy this creamy curry with rice or bread.
     `,
-    creator: 'Max Schwarz',
+    creator: 'Michael Symon ',
     creator_email: 'max@example.com',
   },
   {
@@ -137,7 +137,7 @@ const dummyMeals = [
       4. Serve:
       Serve hot with a slice of lemon and a side of potato salad or greens.
  `,
-    creator: 'Franz Huber',
+    creator: 'Frank Huber',
     creator_email: 'franzhuber@example.com',
   },
   {
