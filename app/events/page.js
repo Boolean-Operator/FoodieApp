@@ -6,30 +6,32 @@ import eventsIcon from '@/assets/icons/events.png';
 import classes from './page.module.css';
 import Link from 'next/link';
 
-export default function CommunityPage() {
+export default function EventsPage() {
   return (
     <>
       <header className={classes.header}>
         <h1>
-          One shared passion: <span className={classes.highlight}>Food</span>
+          <span className={classes.highlight}>
+            Meet friends with a shared passion for Food
+          </span>
         </h1>
-        <p>Join our community and share your favorite recipes!</p>
+        <p>Join our like minded folks and share your passion for great food!</p>
+        <p>
+          Add events page from Join our like minded folks and share your passion
+          for great food!
+        </p>
       </header>
       <main className={classes.main}>
-        <h2>Community Perks</h2>
+        <h2>Upcoming Events</h2>
 
         <ul className={classes.perks}>
           <li>
-            <Link href="/meals" className={classes.link}>
-              <Image src={mealIcon} alt="A delicious meal" />
-              <p>Share & discover recipes</p>
-            </Link>
+            <Image src={mealIcon} alt="A delicious meal" />
+            <p>Culinary and Bartending Classes</p>
           </li>
           <li>
-            <Link href="/social" className={classes.link}>
-              <Image src={communityIcon} alt="A crowd of people, cooking" />
-              <p>Find new friends & like-minded people</p>
-            </Link>
+            <Image src={communityIcon} alt="A crowd of people, cooking" />
+            <p>Social Events and Grand Openings</p>
           </li>
           <li>
             <Link href="/events" className={classes.link}>
@@ -37,7 +39,7 @@ export default function CommunityPage() {
                 src={eventsIcon}
                 alt="A crowd of people at a cooking event"
               />
-              <p>Participate in exclusive events</p>
+              <p>Participate in exclusive events and competitions</p>
             </Link>
           </li>
         </ul>
