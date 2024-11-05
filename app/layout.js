@@ -2,8 +2,8 @@ import MainHeader from './components/main-header/main-header';
 import './globals.css';
 
 export const metadata = {
-  title: 'NextLevel Food for Foodies',
-  description: 'Delicious meals, shared by a food-loving community.',
+  title: 'Food by and for Foodies',
+  description: 'Delicious meals, shared among a food-loving community.',
 };
 
 export default function RootLayout({ children }) {
